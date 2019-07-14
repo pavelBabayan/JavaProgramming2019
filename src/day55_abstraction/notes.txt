@@ -1,0 +1,91 @@
+Abstraction
+
+Abstraction is something not concrete. 
+
+Let's say we have an Animal, Animal it's a generic name.
+
+But cat is an animal, and cat is something concrete.
+
+OOP 
+	Encapsulation
+	Inheritance
+	Abstraction
+
+If we want to create an abstract class, we use keyword abstract.
+We need abstract class to create abstract methods.
+
+We must implement abstract methods in the sub-class.
+
+//		Animal animal = new Animal(); Cannot instantiate the type Animal
+
+Because Animal is an abstract class, we cannot create an object of this class.
+
+#################################
+
+Abstract class -> Concrete class (regular non-abstract class).
+A concrete class is the one from which you can create an instance (object).
+
+we use  keyword abstract to make class abstract
+An then, we can have abstract methods inside.
+
+non-abstract class can extend abstract class
+abstract class can extend other abstract class
+
+If abstract class, extends other abstract class, child class is not responsible for implementation abstract methods. But, concrete class must implement all abstract methods.
+
+You cannot make abstract method final.
+
+Child abstract class can implement parent abstract methods.
+
+Static method cannot be overridden, and cannot be abstract.
+
+Abstract method cannot be final, static and private. 
+
+Abstraction: it provides an idea of what object can do, and it doesn't define how it functions.
+
+Abstract class can be sub-classed but cannot be instantiated.
+
+Keyword abstract can be applied to the method and class only.
+
+You cannot have abstract variable.
+
+#################Task 1########################
+
+1,Create a Shape abstract class
+
+2,create instance fields: name, area (double);
+
+3,create 2 abstract method as below :
+calculateArea() return double, no arg
+draw() void 
+
+4,create one constructor that set name-value
+
+5,Create Circle and Triangle Concrete classes of Shape
+
+5.1,create no arg constructor and call super class's 
+one arg constructor
+for Circle add 1 arg to set radius,Triangle 3 args 
+set length
+
+6,In Circle class add radius field. 
+and use this field to calculate your area in your calculateArea() method
+
+7,in Triangle class add leng1,leng2,leng3 and calculate your area according to the each side of triangle.
+
+9, Implement the abstract methods in both class 
+to provide detail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
